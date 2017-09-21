@@ -73,7 +73,7 @@
 
     <FrameLayout android:layout_width="match_parent"
                  app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                 android:layout_height="wrap_content">
+                 android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -84,15 +84,26 @@
 
         </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_pop"
-            android:paddingLeft="@dimen/wwpx20"
-            android:paddingRight="@dimen/wwpx20"
-            android:paddingBottom="@dimen/wwpx20"
-            android:background="@color/color_white"
-            android:visibility="gone"
+        <LinearLayout
+            android:id="@+id/ll_pop"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_pop"
+                android:paddingLeft="@dimen/wwpx20"
+                android:paddingRight="@dimen/wwpx20"
+                android:paddingBottom="@dimen/wwpx20"
+                android:background="@color/color_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View android:layout_width="match_parent"
+                  android:background="@color/color_a8cccccc"
+                  android:layout_height="match_parent"/>
+
+        </LinearLayout>
 
 
     </FrameLayout>

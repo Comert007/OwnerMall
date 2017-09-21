@@ -39,6 +39,8 @@ public class StoreView implements IView {
 
     @BindView(R.id.rv_pop)
     View popView;
+    @BindView(R.id.ll_pop)
+    LinearLayout llPop;
 
     @Override
     public void onAttach(@NonNull Activity activity, @NonNull View view) {
@@ -61,10 +63,10 @@ public class StoreView implements IView {
     }
 
     public void showPopup(){
-        if (rvPop.getVisibility()==View.VISIBLE){
-            rvPop.setVisibility(View.GONE);
+        if (llPop.getVisibility()==View.VISIBLE){
+            llPop.setVisibility(View.GONE);
         }else {
-            rvPop.setVisibility(View.VISIBLE);
+            llPop.setVisibility(View.VISIBLE);
         }
     }
 
