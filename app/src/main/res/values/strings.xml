@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Store</string>
+    <string name="dialog_loading">Loading...</string>
+    <string name="system_error">system error</string>
+    <string name="app_error">app error</string>
+    <string name="check_net">请检查网络是否正常</string>
+
+    <string name="table_mine">我的</string>
+    <string name="table_store">商城</string>
+    <string name="table_read">阅读</string>
+    <string name="search_goods">搜索商品</string>
+    <string name="special_performance">佛山专场</string>
+    <string name="sid_error">sid error</string>
+    <string name="guess_like">猜你喜欢</string>
+</resources>

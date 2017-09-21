@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.yw.android.store"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors{
+//        onTestApi {
+//            buildConfigField('String', 'BASEURL', '"http://47.93.40.38:8081"')
+//            signingConfig signingConfigs.release
+//            minSdkVersion 14
+//            targetSdkVersion 25
+//        }
+        onLineApi {
+            buildConfigField('String', 'BASEURL', '"http://dev.yanwei365.net:9000"')
+            signingConfig signingConfigs.debug
+            minSdkVersion 14
+            targetSdkVersion 25
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.ww.mvp:wwmvp:1.0.1'
+    compile 'com.ww.http:wwhttp:2.0.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile "com.andkulikov:transitionseverywhere:1.7.4"
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.eftimoff:android-pathview:1.0.8@aar'
+    compile 'com.wdullaer:materialdatetimepicker:3.2.2'
+    compile 'com.alibaba:fastjson:1.2.33'
+    compile 'me.weyye.hipermission:library:1.0.7'
+    compile 'com.ww.core:wwcore:2.0.3'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+}

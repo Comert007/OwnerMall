@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/mall_coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color_f5f5f5"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            app:layout_scrollFlags="scroll|enterAlways"
+            style="@style/StoreSearchLayout">
+            <LinearLayout
+                android:layout_width="@dimen/wwpx577"
+                android:background="@drawable/bg_round_gray_shape"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/wwpx67">
+
+                <ImageView android:layout_width="@dimen/wwpx50"
+                           android:src="@mipmap/ic_search"
+                           android:layout_height="@dimen/wwpx50"/>
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="@dimen/wwpx30"
+                          android:text="@string/search_goods"
+                          android:textColor="@color/color_a6a6a6"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:gravity="center|right"
+                          android:layout_height="match_parent">
+                <ImageView
+                    android:src="@mipmap/ic_cart"
+                    android:layout_width="@dimen/wwpx50"
+                    android:layout_height="@dimen/wwpx50"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/ll_nav"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:background="@color/color_white"
+           android:gravity="center"
+           android:layout_height="@dimen/wwpx66">
+           <net.lucode.hackware.magicindicator.MagicIndicator
+               android:id="@+id/magic_indicator"
+               android:layout_width="0px"
+               android:layout_weight="1"
+               android:layout_height="@dimen/wwpx66" />
+           <LinearLayout android:layout_width="@dimen/wwpx100"
+                         android:gravity="center"
+                         android:layout_height="match_parent">
+               <ImageView
+                   android:id="@+id/iv_arrow_down"
+                   android:src="@mipmap/ic_arrow_down"
+                   android:layout_width="@dimen/wwpx40"
+                   android:layout_height="@dimen/wwpx40"/>
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                 android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pop"
+            android:paddingLeft="@dimen/wwpx20"
+            android:paddingRight="@dimen/wwpx20"
+            android:paddingBottom="@dimen/wwpx20"
+            android:background="@color/color_white"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

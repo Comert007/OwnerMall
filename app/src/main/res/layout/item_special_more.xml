@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="@dimen/wwpx372"
+              android:layout_marginBottom="@dimen/wwpx5"
+              android:background="@color/color_white"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_special_more"
+        android:src="@mipmap/ic_defaultimg"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/wwpx372"
+        android:layout_height="@dimen/wwpx372"/>
+
+
+    <TextView
+        android:id="@+id/tv_special_more"
+        style="@style/NormalText"
+        android:ellipsize="end"
+        android:lines="2"
+        android:paddingLeft="@dimen/wwpx40"
+        android:paddingRight="@dimen/wwpx40"
+        android:layout_marginTop="@dimen/wwpx20"
+        android:layout_width="match_parent"
+    android:text="2.8的房间爱看的份健康的减肥"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:paddingLeft="@dimen/wwpx40"
+                  android:layout_marginTop="@dimen/wwpx20"
+                  android:paddingRight="@dimen/wwpx40"
+                  android:layout_marginBottom="@dimen/wwpx20"
+                  android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_special_more_selling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/wwpx28"
+            android:text="￥ 3.05"
+            android:textColor="@color/color_b4282d"/>
+
+        <TextView
+            android:id="@+id/tv_special_more_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/wwpx24"
+            android:text="￥ 3.05"
+            android:layout_marginLeft="@dimen/wwpx50"
+            android:textColor="@color/color_8c8c8c"/>
+    </LinearLayout>
+
+</LinearLayout>

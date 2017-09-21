@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools" style="@style/LlayFill"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp"/>
+
+
+    <View android:layout_width="match_parent"
+          android:layout_height="2px"
+          android:background="@color/color_space_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wwpx95"
+        android:background="@color/color_tab_bg">
+
+        <LinearLayout
+            android:id="@+id/tab_read_layout"
+            style="@style/TabLayout">
+            <ImageView
+                android:id="@+id/tab_read_image"
+                android:background="@drawable/tab_read_selector"
+                style="@style/TabImage"/>
+            <TextView
+                android:id="@+id/tab_read_text"
+                android:text="@string/table_read"
+                style="@style/TabText"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tab_store_layout"
+            style="@style/TabLayout">
+            <ImageView
+                android:id="@+id/tab_store_image"
+                android:background="@drawable/tab_store_selector"
+                style="@style/TabImage"/>
+            <TextView
+                android:id="@+id/tab_store_text"
+                android:text="@string/table_store"
+                style="@style/TabText"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tab_mine_layout"
+            style="@style/TabLayout">
+            <ImageView
+                android:id="@+id/tab_mine_image"
+                android:background="@drawable/tab_mine_selector"
+                style="@style/TabImage"/>
+            <TextView
+                android:id="@+id/tab_mine_text"
+                android:text="@string/table_mine"
+                style="@style/TabText"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

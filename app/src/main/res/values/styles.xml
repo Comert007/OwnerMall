@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_primary</item>
+
+        <item name="windowNoTitle">true</item>
+
+        <!-- 解决 5.0 button 背景有边框问题 -->
+        <item name="buttonStyle">@style/ButtonStyle</item>
+        <!--设置默认TextView样式-->
+        <item name="editTextStyle">@style/EditTextStyle</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+    </style>
+
+
+    <style name="TextViewStyle" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorTextHint</item>
+        <item name="android:textSize">@dimen/wwpx32</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edit_style_normal_shape</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/Widget.Holo.Light.Button">
+        <item name="android:textSize">@dimen/wwpx32</item>
+        <item name="android:background">@drawable/btn_style_selector</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+
+    <style name="CustomerDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="LlayFill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/color_f5f5f5</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+    <style name="NormalText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/wwpx28</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TipText">
+        <item name="android:layout_width">@dimen/wwpx200</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/wwpx28</item>
+        <item name="android:layout_marginTop">@dimen/wwpx21</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MoneyText">
+        <item name="android:layout_width">@dimen/wwpx200</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/wwpx28</item>
+        <item name="android:layout_marginTop">@dimen/wwpx21</item>
+        <item name="android:textColor">@color/color_b4282d</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+</resources>
